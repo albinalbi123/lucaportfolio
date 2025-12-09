@@ -1127,9 +1127,11 @@ section,
 }
 
 @media (max-width: 768px) {
-  .about .details-grid .detail-row {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .about .details-grid .detail-row .detail-item .detail-label {
+    /* grid-template-columns: 1fr;
+    gap: 1rem; */
+    font-size: 12px;
+
   }
 }
 
@@ -1402,7 +1404,11 @@ justify-content:center;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
-
+@media (max-width: 762px) {
+  .skills .skill-item {
+    margin-bottom: 10px;
+  }
+}
 .skills .skill-box:hover {
   transform: translateY(-5px);
 }
@@ -1600,6 +1606,15 @@ justify-content:center;
   .resume .resume-section h3 {
     font-size: 20px;
   }
+  .resume-side h3 {
+    font-size: 20px !important;
+  }
+  .resume-side p {
+    font-size: 12px !important;
+  }
+  .resume-side ul li {
+    font-size: 13px !important;
+  }
   .resume .resume-section .resume-item h4 {
     font-size: 15px;
   }
@@ -1694,7 +1709,7 @@ justify-content:center;
 .portfolio .portfolio-wrap img {
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 100%;
-  height: 350px;
+  /* height: 350px; */
   object-fit: cover;
 }
 
@@ -1772,7 +1787,26 @@ justify-content:center;
 .portfolio .portfolio-wrap:hover .portfolio-info .content {
   transform: translateY(0);
 }
-
+@media (max-width: 992px) {
+.portfolio-info .content .category{
+font-size: 13px;
+}
+.portfolio-info .content h4{
+font-size: 13px !important;
+}
+.portfolio-info .content .portfolio-links a{
+/* font-size: 10px !important; */
+  width: 20px;
+  height: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
